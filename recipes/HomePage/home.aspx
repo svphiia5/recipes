@@ -1,44 +1,52 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="MyProject.Home" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="SRecipes.Home" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Home Page</title>
+    <title>SRecipes - Home</title>
     <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
-    <!-- Header / Navigation -->
     <header>
+        <div class="logo">
+            <h1>SRecipes</h1>
+            <p>מתכונים ישראליים באהבה 💙</p>
+        </div>
+
         <nav>
-            <ul>
-                <li><a href="../HomePage/home.aspx">Home</a></li>
-                <li><a href="../LoginPage/login.aspx">Login</a></li>
-                <li><a href="../SignupPage/signup.aspx">Sign Up</a></li>
-                <li><a href="../LogoutPage/logout.aspx">Logout</a></li>
-                <li><a href="../AboutUs/about.aspx">About Us</a></li>
+            <ul class="tabs">
+                <li><a href="../HomePage/home.aspx">בית</a></li>
+                <li><a href="../AboutUs/about.aspx">עלינו</a></li>
+                <li><a href="../SignupPage/signup.aspx">הרשמה</a></li>
+                <li><a href="../LoginPage/login.aspx">התחברות</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <h1>שלום וברוכים הבאים לאתר שלנו</h1>
+        <h2>ברוכים הבאים ל-SRecipes</h2>
 
         <p>
-            אתר זה נבנה במסגרת פרויקט לימודי בטכנולוגיית ASP.NET Web Forms.
+            האתר שלנו מוקדש למתכונים ישראליים מסורתיים ומודרניים.
+            כאן תוכלו למצוא מתכונים ביתיים, מאכלי חג,
+            קינוחים ישראליים ואוכל מכל העדות.
         </p>
 
-        <p>
-            באתר ניתן למצוא מידע כללי, להירשם כמשתמש חדש, להתחבר למערכת
-            וללמוד על מטרות האתר והפונקציונליות שלו.
-        </p>
-
-        <p>
-            הפרויקט מדגים הפרדה בין צד לקוח (HTML + CSS)
-            לבין צד שרת (C#), בהתאם לעקרונות פיתוח נכונים.
-        </p>
+        <section class="info-box">
+            <h3>מה תמצאו באתר?</h3>
+            <ul>
+                <li>🥗 מתכונים בריאים</li>
+                <li>🍲 אוכל מסורתי לשבת וחג</li>
+                <li>🍰 קינוחים ישראליים</li>
+                <li>👩‍🍳 אפשרות להירשם ולהתחבר</li>
+            </ul>
+        </section>
     </main>
+
+    <footer>
+        <p>© 2026 SRecipes | כל הזכויות שמורות</p>
+    </footer>
 
 </body>
 </html>
