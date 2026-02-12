@@ -1,6 +1,6 @@
 using System;
 
-namespace MyProject
+namespace SRecipes
 {
     public partial class Home : System.Web.UI.Page
     {
